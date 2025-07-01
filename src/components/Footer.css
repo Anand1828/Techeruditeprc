@@ -1,0 +1,93 @@
+.footer {
+  background: #eef6f7;
+  padding: 40px 0 0 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-tagline {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.footer-email a {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-logo img {
+  margin-top: 24px;
+  width: 100px;
+}
+
+.footer-mid, .footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.footer-address, .footer-contact {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  padding: 16px 40px 24px 40px;
+  border-top: 1px solid #dbe9ea;
+  font-size: 1rem;
+}
+
+.footer-bottom nav a {
+  margin-right: 32px;
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-bottom nav a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-main {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 16px 24px 16px;
+  }
+} 

@@ -1,0 +1,106 @@
+.services-section {
+  padding: 60px 5vw 40px 5vw;
+  background: #fff;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 32px;
+  justify-items: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 32px 22px 28px 22px;
+  max-width: 340px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 6px 32px rgba(0,124,240,0.10);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #ff7a00;
+  margin-bottom: 18px;
+}
+
+.service-icon img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px auto;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(92%) saturate(2092%) hue-rotate(1deg) brightness(101%) contrast(101%);
+}
+
+.service-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.service-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    padding: 36px 2vw 24px 2vw;
+  }
+  .services-title {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+  }
+  .service-card {
+    padding: 22px 8px 18px 8px;
+    min-height: 180px;
+  }
+  .service-icon {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+  }
+  .service-icon img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 10px;
+  }
+  .service-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .service-desc {
+    font-size: 0.95rem;
+  }
+} 

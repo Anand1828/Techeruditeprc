@@ -1,0 +1,88 @@
+.contact-form {
+  max-width: 800px;
+  margin: 60px auto;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-form small {
+  display: block;
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 8px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  margin-bottom: 0;
+}
+
+.form-row select {
+  color: #555;
+}
+
+.form-row.center {
+  justify-content: center;
+}
+
+button[type='submit'] {
+  min-width: 220px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button[type='submit']:hover {
+  background: #ff8000;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.field-error {
+  color: red;
+  font-size: 0.95em;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-left: 2px;
+  min-height: 18px;
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-form {
+    gap: 18px;
+  }
+} 
